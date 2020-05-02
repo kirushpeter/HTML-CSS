@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    
+    font-weight: bold;
+    
+}
+
+body{
+    background-color: rgba(4, 3, 26, 0.884);
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head1{
+    font-size: 120px;
+}
+
+
+nav{
+    float: right;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding: 23px;
+    position: relative;
+    
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: yellowgreen;
+
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgba(4, 3, 26, 0.884);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+
+}
+nav a:hover::before{
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/bas-de-korte-AWeqehFLOgo-unsplash.jpg);
+    background-size: 100% 100%;
+}
+.about{
+    width: 100%;
+    height: 300px;
+}
